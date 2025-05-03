@@ -1,0 +1,65 @@
+.image {
+    width: calc((100% - 24px) / 2);
+    max-width: 924px;
+
+    &:nth-child(2n+1) {
+        margin-right: 24px;
+    }
+
+    &:not(:nth-child(n+5)) {
+        margin-bottom: 24px;
+    }
+
+    img {
+    width: 100%;
+    max-width: 924px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .image {
+        max-width: 696px;
+
+        img {
+            max-width: 696px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image {
+        width: calc((100% - 10px) / 2);
+        max-width: 492px;
+
+        &:nth-child(2n+1) {
+            margin-right: 10px;
+        }
+    
+        &:not(:nth-child(n+5)) {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 492px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        width: calc((100% - 12px) / 2);
+        max-width: 354px;
+
+        &:nth-child(2n+1) {
+            margin-right: 12px;
+        }
+    
+        &:not(:nth-child(n+5)) {
+            margin-bottom: 12px;
+        }
+
+        img {
+            max-width: 354px;
+        }
+    }
+}

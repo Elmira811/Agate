@@ -1,0 +1,24 @@
+.favorite-dishes {
+    &__text {
+        @include grey-text($small-text-color);
+        margin: 30px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .favorite-dishes {
+        &__text {
+            font-size: 1.1rem;
+            margin-bottom: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .favorite-dishes {
+        &__text {
+            font-size: $button-font;
+            margin: 20px 0 58px;
+        }
+    }
+}

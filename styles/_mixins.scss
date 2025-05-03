@@ -1,0 +1,54 @@
+@mixin pseudo($content, $bg-color) {
+    content: $content;
+    width: 58px;
+    height: 58px;
+    background-color: $bg-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    left: -29px;
+    color: $primary-text-color;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 58px;
+}
+
+@mixin pseudo1024 {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 0.6rem;
+    top: -23px;
+    left: -23px;
+}
+
+@mixin pseudo768 {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 0.7rem;
+    top: -28px;
+    left: -28px;
+}
+
+@mixin pseudo440 {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 0.6rem;
+    top: -24px;
+    left: -24px;
+}
+
+@mixin button-hover {
+    color: $primary-text-color;
+    background-color: #ffa60d;
+    border-color: #ffa60d;
+}
+
+@mixin grey-text($color) {
+    font-size: $small-font;
+    font-weight: 300;
+    color: $color;
+}

@@ -1,0 +1,57 @@
+.restaurant {
+    padding: 218px 0 185px;
+    
+    &__title {
+    font-size: 4.25rem;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    max-width: 914px;
+    margin: 0 auto;
+   }
+
+   &__text {
+    font-size: $small-font;
+    color: $primary-text-color;
+    margin: 35px 0 60px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+    .restaurant {
+        padding: 183px 0 153px;
+
+        &__title {
+            font-size: 3rem;
+            max-width: 697px;
+        }
+
+        &__text {
+            font-size: $article-font;
+            margin-bottom: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant {
+        padding: 171px 0 99px;
+
+        &__title {
+            font-size: 2.5rem;
+            max-width: 329px;
+        }
+
+        &__text {
+            margin-bottom: 66px;
+        }
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .restaurant {
+        &__text {
+            font-size: 0.6rem;
+        }
+    }
+}

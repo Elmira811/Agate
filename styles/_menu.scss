@@ -1,0 +1,32 @@
+.menu {
+    align-self: center;
+
+    &__item {
+        font-size: 1.1rem;
+        display: inline-block;
+        
+        &:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 1.5px;
+            background-color: $primary-text-color;
+            transform: rotate(90deg);
+            margin: 0 6px;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        &__item {
+            font-size: $article-font;
+        }
+
+        &:not(:last-child)::after {
+            margin: 0 5px;
+        }
+    }
+}
+

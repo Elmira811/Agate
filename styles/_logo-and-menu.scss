@@ -1,0 +1,10 @@
+.logo-and-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 525px) {
+    .logo-and-menu {
+        flex-direction: column;
+    }
+}

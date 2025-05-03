@@ -1,0 +1,55 @@
+.about-us {
+    background-color: $primary-color;
+
+    &__text {
+        font-size: $base-font;
+        font-weight: $base-weight;
+        max-width: 941px;
+        line-height: 40.74px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us {
+        &__text {
+            font-size: 1.1rem;
+            line-height: 29.88px;
+            max-width: 602px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        &__text {
+            font-size: $button-font;
+            line-height: 27.16px;
+            max-width: 541px;
+        }
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .about-us {
+        &__text {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .about-us {
+        &__text {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .about-us {
+        &__text {
+            font-size: 0.5rem;
+        }
+    }
+}

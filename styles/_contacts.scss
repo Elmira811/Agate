@@ -1,0 +1,37 @@
+.contacts {
+    margin: 60px 0;
+    list-style-type: none;
+
+    &__item {
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        margin: 50px 0;
+
+        &__item {
+            font-size: $small-font;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        margin: 40px 0;
+
+        &__item {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .contacts {
+        &__item {
+            font-size: 0.8rem;
+        }
+    }
+}

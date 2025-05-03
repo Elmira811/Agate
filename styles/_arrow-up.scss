@@ -1,0 +1,13 @@
+.arrow-up {
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+    color: #ffac1c;
+    font-size: 70px;
+}
+
+@media screen and (max-width: 612px) {
+    .arrow-up {
+        font-size: 50px;
+    }
+}

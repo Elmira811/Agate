@@ -1,0 +1,15 @@
+.logo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    transition: transform .6s;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 1.75rem;
+    }
+}

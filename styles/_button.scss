@@ -1,0 +1,43 @@
+.button {
+    font-size: $button-font;
+    font-weight: 600;
+    display: block;
+    width: 312px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px;
+    margin: 0 auto;
+    transition: background-color .5s, color .5s;
+
+     &--white {
+        color: $primary-text-color;
+        border: 2px solid $primary-text-color;
+
+        &:hover {
+            @include button-hover;
+        }
+    }
+ 
+    &--black {
+        color: $secondary-text-color;
+        border: 2px solid $secondary-text-color;
+        margin-top: 60px;
+
+        &:hover {
+            @include button-hover;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        font-size: 0.85rem;
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+
+        &--black {
+            margin-top: 45px;
+        }
+    }
+}
